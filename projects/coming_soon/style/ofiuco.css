@@ -2,10 +2,7 @@
     overflow: hidden;
     z-index: -100;
     position: relative;
-    /* height: 100%; */
     width: 100%;
-    /* padding-top:45%; */
-
     padding-top: 0%;
     height: 100vh;
 }
@@ -18,7 +15,6 @@
 }
  
 .overlay {
-    /* background: rgba(0,0,0,0.6); */
     position: absolute;
     top:0;
     left:0;
@@ -39,18 +35,6 @@
     color: #fff;
     font-size: 20px;
 }
-
-/* Скрываем видео на маленьких устройствах */
-/* @media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('../gallery/bg_header.jpg') center center / cover no-repeat;
-    }
- 
-    .fullscreen-bg__video {
-        display: none;
-    }
-} */
-
 
 @media (max-width: 767px) {
     .fullscreen-bg {
