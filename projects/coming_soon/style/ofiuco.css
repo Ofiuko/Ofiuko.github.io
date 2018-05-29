@@ -40,15 +40,7 @@
     .bg_full {
         background: url('../gallery/bg.jpg') center center / cover no-repeat;
     }
- 
     .bg_full__video {
         display: none;
     }
-}
-
-#form {
-    max-width: 500px;
-    margin: 0 auto 50px;
-    padding-left: 4px;
-    padding-right: 4px;
 }
