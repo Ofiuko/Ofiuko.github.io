@@ -1,0 +1,41 @@
+@media (max-width: 1140px) {
+    .wrap { padding: 0 16px; }
+    .menu {
+        display: none;
+        padding-top: 24px;
+        text-align: center;
+        width: 100%;
+        line-height: 2;
+        background: #000;
+        position: absolute;
+        left: 0;
+        top: 90px;
+    }
+    .logo {
+        padding-top: 20px;
+        display: block;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .header__title {
+        margin: 234px auto;
+    }
+    .header__menu {
+        height: 90px;
+        width: 100%;
+        background: #000;
+        /* position: fixed; */
+        opacity: .9;
+        z-index: 9;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+    .active {
+        display: block;
+    }
+}

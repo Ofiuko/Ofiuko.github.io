@@ -6,10 +6,7 @@ html, body {
     height: 100%;
     font-size: 10px;
 }
-body {
-    display: flex;
-    flex-direction: column;
-}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -25,21 +22,19 @@ a {
 }
 .header__menu {
     height: 110px;
-    background: #000;
     color: #fff;
     margin: 0;
     padding: 0;
 }
 .wrap {
-    max-width: 1144px;
-    height: 960px;
+    max-width: 1140px;
     margin: 0 auto;
-    /* border: 1px solid #f4cf00; */
 }
 .logo {
     width: 256px;
     display: inline-block;
-    margin-right: 90px;
+    margin-right: 80px;
+    vertical-align: middle;
 }
 .menu {
     padding-top: 60px;
@@ -53,7 +48,7 @@ a {
 }
 .menu ul li {
     display: inline;
-    margin-left: 24px;
+    margin-left: 22px;
 }
 .menu__btn {
     background: #f4cf00;
@@ -63,11 +58,41 @@ a {
     padding: 10px 30px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
+
+.mobile {
+    display: none;
+    margin: 0;
+    padding: 12px 15px;
+    background: #595a5e;
+    position: absolute;
+    color: #e2fbf9;
+    top: 26px;
+    right: 20px;
+    line-height: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.active {
+    max-height: 1000px;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+}
+/* --------- */
+
 .header__info {
+    color: #fff;
+    min-height: 860px;
+}
+.header__title {
     max-width: 500px;
-    text-align: left;
-    margin: 240px 0 0;
+    min-height: 350px;
+    margin: 234px 0;
 }
 .header__info h1 {
     font-size: 4.5rem;
@@ -84,14 +109,14 @@ a {
 .btn {
     font-size: 1.8rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px 0;
     border: 2px solid #fff;
     text-align: center;
-    width: 340px;
+    width: 100%;
+    text-transform: uppercase;
 }
 /* ---------------------- */
 .content {
-    flex-grow: 1;
     text-align: center;
 }
 /* ---------------------- */
