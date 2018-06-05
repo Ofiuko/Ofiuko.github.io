@@ -6,7 +6,6 @@
         text-align: center;
         width: 100%;
         line-height: 2;
-        background: #000;
         position: absolute;
         left: 0;
         top: 90px;
@@ -26,8 +25,6 @@
     .header__menu {
         height: 90px;
         width: 100%;
-        background: #000;
-        /* position: fixed; */
         opacity: .9;
         z-index: 9;
     }
@@ -36,6 +33,11 @@
         display: block;
     }
     .active {
+        background: #000;
         display: block;
+        max-height: 1000px;
     }
+    .header__menu .active { border-top: 1px solid #fafafa; }
+
+    .footer .logo { padding-top: 0; }
 }
