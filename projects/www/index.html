@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Студия Elen</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="верстка, сайт под ключ, uwp приложение, создание сайтов, spa">
+    <meta name="description" content="Создание Desktop и Web приложений">
+
+    <link rel="stylesheet" href="style/vendor.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div id="fake_loader"></div>
+    <script type="text/javascript" src="./js/fakeLoader.js"></script>
+    <script type="text/javascript">
+        $("#fake_loader").fakeLoader({
+            timeToHide: 3000,
+            zIndex: "999",
+            spinner: "spinner2",
+            bgColor: "#0155ad"
+        });
+
+        // document.documentElement.style.overflow = "auto";
+    </script>
+
+
+    <header class="header">
+        <div class="logo">
+            <!--&lt;!&ndash;<a href="#home">-->
+                <!--<img src="./images/logo.png" alt="logo">-->
+            <!--</a>&ndash;&gt;-->
+        </div>
+
+        <button class="mobile" type="button">&#9776;</button>
+
+        <nav class="navigation">
+            <ul>
+                <!--<li><a href="#slider" class="navigation__item active"><i class="fa fa-home"></i>Главная</a></li>-->
+                <li><a href="#main" class="navigation__item active"><i class="fa fa-home"></i>Главная</a></li>
+                <li><a href="#services" class="navigation__item"><i class="fa fa-lightbulb-o"></i>Услуги</a></li>
+                <li><a href="#portfolio" class="navigation__item"><i class="fa fa-picture-o"></i>Портфолио</a></li>
+                <li><a href="#about" class="navigation__item"><i class="fa fa-comment-o"></i>О нас</a></li>
+                <!--<li><a href="http://it-elenBlog.ru" class="navigation__item"><i class="fa fa-file-text" aria-hidden="true"></i>
+                                                                                 <i class="fa fa-address-card" aria-hidden="true"></i>
+                                                                                 <i class="fa fa-book" aria-hidden="true"></i>Наш блог</a></li>-->
+                <li><a href="#contacts" class="navigation__item"><i class="fa fa-paper-plane"></i>Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="content">
+    <!--<div id="slider" class="slider">-->
+        <!--<h1>Вашей компании нужен сайт или может вы хотите завести свой блог? Тогда мы вам поможем!</h1>-->
+        <!--<ul class="slider_wrapper">-->
+            <!--<li class="slide">-->
+                <!--<div class="slide_item">-->
+                    <!--<h3>Мобильные устройства</h3>-->
+                    <!--<p>Качественная верстка сайтов, корректно отображающихся на мобильных устройствах.</p>-->
+                <!--</div>-->
+                <!--<div class="slide_item">-->
+                    <!--<img src="./images/slider/iphone.png" alt="iphone" />-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="slide">-->
+                <!--<div class="slide_item">-->
+                    <!--<h3>Планшеты</h3>-->
+                    <!--<p>Качественная верстка сайтов, корректно отображающихся на планшетах.</p>-->
+                <!--</div>-->
+                <!--<div class="slide_item">-->
+                    <!--<img src="./images/slider/ipad.png" alt="ipad" />-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="slide">-->
+                <!--<div class="slide_item">-->
+                    <!--<h3> Ноутбуки</h3>-->
+                    <!--<p>Качественная верстка сайтов, корректно отображающихся на ноутбуках.</p>-->
+                <!--</div>-->
+                <!--<div class="slide_item">-->
+                    <!--<img src="./images/slider/macbook.png" alt="macbook" />-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="slide">-->
+                <!--<div class="slide_item">-->
+                    <!--<h3>ПК</h3>-->
+                    <!--<p>Качественная верстка сайтов, корректно отображающихся на стационарных компьютерах.</p>-->
+                <!--</div>-->
+                <!--<div class="slide_item">-->
+                    <!--<img src="./images/slider/imac.png" alt="imac" />-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+        <!--<ul id="slider_dots" class="slider_dots"></ul>-->
+    <!--</div>-->
+    <div id="main" class="main">
+        <div class="overlay"></div>
+        <div class="main_wrap">
+            <h3 class="main_title animated fadeInDownBig">Верстка сайтов</h3>
+            <div class="main_slogan">Elena Sh</div>
+        </div>
+        <a id="main_arrow" href="#services" class="main_arrow"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="services" class="services">
+        <div class="indent">
+            <h2>Услуги</h2>
+            <p>Вы хотите иметь свой сайт? Мы поможем Вам в достижении этой цели!</p>
+
+            <div class="docket">
+                <div class="docket__item">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <h3>Верстка</h3>
+                    <p>Cоздание адаптивных кросбраузерных веб-приложений.</p>
+                </div>
+                <div class="docket__item">
+                    <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+                    <h3>Правки проектов</h3>
+                    <p>Правка уже готовых проектов.</p>
+                </div>
+                <div class="docket__item">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h3>Поддержка</h3>
+                    <p>Поддержка проектов на всем протяжении их работы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="portfolio">
+        <div class="overlay"></div>
+        <div class="indent">
+            <h2>Портфолио</h2>
+            <p>Ознакомьтесь с нашими работами</p>
+            <ul class="filters clearfix">
+                <li><a href="#portfolio" class="active" data-filter="*">Все работы</a></li>
+                <li><a href="#portfolio" data-filter=".spa">SPA</a></li>
+                <li><a href="#portfolio" data-filter=".app">C#</a></li>
+                <li><a href="#portfolio" data-filter=".other">Другие проекты</a></li>
+            </ul>
+
+            <ul id="work" class="work">
+                <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="Создание SPA приложения ProKurs">
+                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>ProKurs</h4>
+                            <span>Верстка образовательного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
+                        <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Tajam</h4>
+                            <span>Верстка сайта визитки</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item app">
+                    <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
+                        <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Golden-One-Page</h4>
+                            <span>Верстка однастраничного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item app">
+                    <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
+                        <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
+                        <div>
+                            <i class="fa fa-search" area-hidden="true"></i>
+                            <h4>Zet</h4>
+                            <span>Верстка страницы-портфолио</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="ProKurs">
+                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>ProKurs</h4>
+                            <span>Верстка образовательного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
+                        <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Tajam</h4>
+                            <span>Верстка сайта визитки</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/AutoHoll.png" title="AutoHoll">
+                        <img src="./images/portfolio/AutoHoll.png" alt="Проект AutoHoll" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>AutoHoll</h4>
+                            <span>Верстка сайта автомастерской</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
+                        <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Golden-One-Page</h4>
+                            <span>Верстка одностраничного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item app">
+                    <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
+                        <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
+                        <div>
+                            <i class="fa fa-search" area-hidden="true"></i>
+                            <h4>Zet</h4>
+                            <span>Верстка страницы-портфолио</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="ProKurs">
+                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>ProKurs</h4>
+                            <span>Верстка образовательного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
+                        <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Tajam</h4>
+                            <span>Верстка сайта визитки</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/AutoHoll.png" title="AutoHoll">
+                        <img src="./images/portfolio/AutoHoll.png" alt="Проект AutoHoll" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>AutoHoll</h4>
+                            <span>Верстка сайта автомастерской</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
+                        <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Golden-One-Page</h4>
+                            <span>Верстка одностраничного сайта</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
+                    <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
+                        <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
+                        <div>
+                            <i class="fa fa-search" area-hidden="true"></i>
+                            <h4>Zet</h4>
+                            <span>Верстка страницы-портфолио</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item app">
+                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="ProKurs">
+                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>ProKurs</h4>
+                            <span>Верстка образовательного сайта</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <div class="indent">
+            <h2>О нас</h2>
+            <p><span>ElenStydio</span> – <br> это команда высококвалифицированных разработчиков ИТ приложений, <br> веб программистов и дизайнеров, <br> которые вкладывают свою душу в каждый проект.</p>
+
+            <div class="list">
+                <div class="list__item">
+                    Строгое соблюдение установленных сроков
+                </div>
+                <div class="list__item">
+                    Полная кроссбраузерность и валидность кода
+                </div>
+                <div class="list__item">
+                    Самые популярные, стабильные и простые в использовании CMS
+                </div>
+                <div class="list__item">
+                    Поддержка вашего проекта на всем протяжении его работы
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="contacts">
+        <div class="indent">
+            <h2>Контакты</h2>
+            <p>Пожалуйста, не стесняйтесь обращаться к нам для получения дополнительной информации о работе.</p>
+            <div class="contact">
+                <div class="contact__item">
+                    <h3>Наши контакты</h3>
+                    <ul class="contact_link">
+                        <li><i class="fa fa-envelope" aria-hidden="true" target="_blank"></i>support@elenstydio.com</li>
+                        <li><i class="fa fa-skype" aria-hidden="true" target="_blank"></i>elenstydio.ru</li>
+                    </ul>
+
+                    <div class="social">
+                        <a href="https://vk.com/itelen" class="btn social__btn" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/elena-schleht-5b3404116?trk=nav_responsive_tab_profile_pic" class="btn social__btn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://bitbucket.org/work-des-e" class="btn social__btn" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <h3>Напишите нам</h3>
+                    <div class="contact_form">
+                        <!--Сообщение успешной отправки данных-->
+                        <!--<div class="alert_success hidden" role="alert" id="sSubmit">
+							"Сообщение отправлено успешно."
+						</div>-->
+                        <!--Форма обратной связи-->
+                        <form id="form" class="form">
+                            <input type="text" name="name" placeholder="Имя: " required><br>
+                            <input type="text" name="email" placeholder="Email: " required><br>
+                            <textarea rows="text" name="message" placeholder="Ваше сообщение" rows="10" required=""></textarea><br>
+                            <button type="submit" class="btn submit__btn" value="Отправить сообщение">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" id="btn_up" class="btn btn_up" title="Вернуться назад">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <!--<i class="fa fa-angle-double-up" aria-hidden="true"></i>-->
+    </a>
+</div>
+
+<div class="footer">
+    <div class="copy">
+        &copy; 2016 <a href="http://it-elen.ru" target="_blank">ElenStydio</a>, Все права защищены.
+    </div>
+</div>
+
+
+<script src="js/main.js"></script>
+
+<script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+    //]]>
+</script>
+</body>
+
+</html>
