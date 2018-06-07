@@ -11,7 +11,9 @@
     <meta name="description" content="Создание Desktop и Web приложений">
 
     <link rel="stylesheet" href="style/vendor.css">
-    <link rel="stylesheet" href="style/main.css">
+    <!-- <link rel="stylesheet" href="style/main.css"> -->
+    <link rel="stylesheet" href="style/style.css">
+    
 </head>
 
 <body>
@@ -31,23 +33,16 @@
 
     <header class="header">
         <div class="logo">
-            <!--&lt;!&ndash;<a href="#home">-->
-                <!--<img src="./images/logo.png" alt="logo">-->
-            <!--</a>&ndash;&gt;-->
         </div>
 
         <button class="mobile" type="button">&#9776;</button>
 
         <nav class="navigation">
             <ul>
-                <!--<li><a href="#slider" class="navigation__item active"><i class="fa fa-home"></i>Главная</a></li>-->
                 <li><a href="#main" class="navigation__item active"><i class="fa fa-home"></i>Главная</a></li>
                 <li><a href="#services" class="navigation__item"><i class="fa fa-lightbulb-o"></i>Услуги</a></li>
                 <li><a href="#portfolio" class="navigation__item"><i class="fa fa-picture-o"></i>Портфолио</a></li>
                 <li><a href="#about" class="navigation__item"><i class="fa fa-comment-o"></i>О нас</a></li>
-                <!--<li><a href="http://it-elenBlog.ru" class="navigation__item"><i class="fa fa-file-text" aria-hidden="true"></i>
-                                                                                 <i class="fa fa-address-card" aria-hidden="true"></i>
-                                                                                 <i class="fa fa-book" aria-hidden="true"></i>Наш блог</a></li>-->
                 <li><a href="#contacts" class="navigation__item"><i class="fa fa-paper-plane"></i>Контакты</a></li>
             </ul>
         </nav>
@@ -55,49 +50,6 @@
 
 
 <div class="content">
-    <!--<div id="slider" class="slider">-->
-        <!--<h1>Вашей компании нужен сайт или может вы хотите завести свой блог? Тогда мы вам поможем!</h1>-->
-        <!--<ul class="slider_wrapper">-->
-            <!--<li class="slide">-->
-                <!--<div class="slide_item">-->
-                    <!--<h3>Мобильные устройства</h3>-->
-                    <!--<p>Качественная верстка сайтов, корректно отображающихся на мобильных устройствах.</p>-->
-                <!--</div>-->
-                <!--<div class="slide_item">-->
-                    <!--<img src="./images/slider/iphone.png" alt="iphone" />-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="slide">-->
-                <!--<div class="slide_item">-->
-                    <!--<h3>Планшеты</h3>-->
-                    <!--<p>Качественная верстка сайтов, корректно отображающихся на планшетах.</p>-->
-                <!--</div>-->
-                <!--<div class="slide_item">-->
-                    <!--<img src="./images/slider/ipad.png" alt="ipad" />-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="slide">-->
-                <!--<div class="slide_item">-->
-                    <!--<h3> Ноутбуки</h3>-->
-                    <!--<p>Качественная верстка сайтов, корректно отображающихся на ноутбуках.</p>-->
-                <!--</div>-->
-                <!--<div class="slide_item">-->
-                    <!--<img src="./images/slider/macbook.png" alt="macbook" />-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="slide">-->
-                <!--<div class="slide_item">-->
-                    <!--<h3>ПК</h3>-->
-                    <!--<p>Качественная верстка сайтов, корректно отображающихся на стационарных компьютерах.</p>-->
-                <!--</div>-->
-                <!--<div class="slide_item">-->
-                    <!--<img src="./images/slider/imac.png" alt="imac" />-->
-                <!--</div>-->
-            <!--</li>-->
-        <!--</ul>-->
-
-        <!--<ul id="slider_dots" class="slider_dots"></ul>-->
-    <!--</div>-->
     <div id="main" class="main">
         <div class="overlay"></div>
         <div class="main_wrap">
@@ -140,22 +92,32 @@
             <ul class="filters clearfix">
                 <li><a href="#portfolio" class="active" data-filter="*">Все работы</a></li>
                 <li><a href="#portfolio" data-filter=".spa">SPA</a></li>
-                <li><a href="#portfolio" data-filter=".app">C#</a></li>
+                <!-- <li><a href="#portfolio" data-filter=".app">C#</a></li> -->
                 <li><a href="#portfolio" data-filter=".other">Другие проекты</a></li>
             </ul>
 
             <ul id="work" class="work">
                 <li class="work__item spa">
-                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="Создание SPA приложения ProKurs">
-                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
+                    <a class="fancybox-my" href="./images/portfolio/Rocket.jpg" title="Верстка проекта Rocket">
+                        <img src="./images/portfolio/Rocket.jpg" alt="Проект Rocket" />
                         <div>
                             <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>ProKurs</h4>
-                            <span>Верстка образовательного сайта</span>
+                            <h4>Rocket</h4>
+                            <span>Система управления ИНТЕРНЕТ-МАГАЗИНОМ, с особой загрузкой страницы.</span>
                         </div>
                     </a>
                 </li>
                 <li class="work__item spa">
+                    <a class="fancybox-my" href="./images/portfolio/Portfolio.png" title="Portfolio">
+                        <img src="./images/portfolio/Portfolio.png" alt="Проект Portfolio" />
+                        <div>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <h4>Portfolio</h4>
+                            <span>Верстка сайта портфолио</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="work__item other">
                     <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
                         <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
                         <div>
@@ -165,7 +127,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="work__item app">
+                <li class="work__item">
                     <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
                         <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
                         <div>
@@ -175,7 +137,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="work__item app">
+                <li class="work__item">
                     <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
                         <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
                         <div>
@@ -195,103 +157,13 @@
                         </div>
                     </a>
                 </li>
-                <li class="work__item other">
-                    <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
-                        <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>Tajam</h4>
-                            <span>Верстка сайта визитки</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item other">
+                <li class="work__item spa">
                     <a class="fancybox-my" href="./images/portfolio/AutoHoll.png" title="AutoHoll">
                         <img src="./images/portfolio/AutoHoll.png" alt="Проект AutoHoll" />
                         <div>
                             <i class="fa fa-search" aria-hidden="true"></i>
                             <h4>AutoHoll</h4>
                             <span>Верстка сайта автомастерской</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item other">
-                    <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
-                        <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>Golden-One-Page</h4>
-                            <span>Верстка одностраничного сайта</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item app">
-                    <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
-                        <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
-                        <div>
-                            <i class="fa fa-search" area-hidden="true"></i>
-                            <h4>Zet</h4>
-                            <span>Верстка страницы-портфолио</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item spa">
-                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="ProKurs">
-                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>ProKurs</h4>
-                            <span>Верстка образовательного сайта</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item spa">
-                    <a class="fancybox-my" href="./images/portfolio/Tajam_master.jpg" title="Tajam_master">
-                        <img src="./images/portfolio/Tajam_master.jpg" alt="Проект Tajam_master" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>Tajam</h4>
-                            <span>Верстка сайта визитки</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item other">
-                    <a class="fancybox-my" href="./images/portfolio/AutoHoll.png" title="AutoHoll">
-                        <img src="./images/portfolio/AutoHoll.png" alt="Проект AutoHoll" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>AutoHoll</h4>
-                            <span>Верстка сайта автомастерской</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item other">
-                    <a class="fancybox-my" href="./images/portfolio/Golden-One-Page.jpg" title="Golden-One-Page">
-                        <img src="./images/portfolio/Golden-One-Page.jpg" alt="Проект Golden-One-Page" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>Golden-One-Page</h4>
-                            <span>Верстка одностраничного сайта</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item other">
-                    <a class="fancybox-my" href="./images/portfolio/Zet.jpg" title="Zet">
-                        <img src="./images/portfolio/Zet.jpg" alt="Проект Zet" />
-                        <div>
-                            <i class="fa fa-search" area-hidden="true"></i>
-                            <h4>Zet</h4>
-                            <span>Верстка страницы-портфолио</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="work__item app">
-                    <a class="fancybox-my" href="./images/portfolio/ProKurs.png" title="ProKurs">
-                        <img src="./images/portfolio/ProKurs.png" alt="Проект ProKurs" />
-                        <div>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <h4>ProKurs</h4>
-                            <span>Верстка образовательного сайта</span>
                         </div>
                     </a>
                 </li>
@@ -342,10 +214,6 @@
                 <div class="contact__item">
                     <h3>Напишите нам</h3>
                     <div class="contact_form">
-                        <!--Сообщение успешной отправки данных-->
-                        <!--<div class="alert_success hidden" role="alert" id="sSubmit">
-							"Сообщение отправлено успешно."
-						</div>-->
                         <!--Форма обратной связи-->
                         <form id="form" class="form">
                             <input type="text" name="name" placeholder="Имя: " required><br>
@@ -361,7 +229,6 @@
 
     <a href="" id="btn_up" class="btn btn_up" title="Вернуться назад">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        <!--<i class="fa fa-angle-double-up" aria-hidden="true"></i>-->
     </a>
 </div>
 
