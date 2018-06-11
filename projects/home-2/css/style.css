@@ -5,13 +5,17 @@
 html {
     font-size: 10px;
 }
-
 a {
     color: #fff;
     text-decoration: none;
 }
+a:hover { color: #f4cf00; }
+img {
+    max-width: 100%;
+    height: auto;
+}
 h2 {
-    font-family: "Arian AMU";
+    font-family: "regular";
     font-size: 4.5rem;
     color: #0068c9;
 }
@@ -21,7 +25,7 @@ p { font-size: 2.2rem; }
 .header {
     background: url(../img/bg_header.png) no-repeat 62% center / cover;
     min-height: 980px;
-    font-family: "Arian AMU";
+    font-family: "regular";
 }
 .header, .content, .footer {
     box-sizing: border-box;
@@ -38,10 +42,26 @@ p { font-size: 2.2rem; }
     margin: 0 auto;
 }
 .logo {
-    width: 256px;
     display: inline-block;
     margin-right: 78px;
     vertical-align: middle;
+}
+/* ---------- */
+.mobile {
+    display: none;
+    float: right;
+    margin: 30px 0;
+}
+.mobile div {
+    background-color: #fff;
+    width: 34px;
+    height: 4px;
+}
+.mobile__1 {
+    margin-bottom: 4px;
+}
+.mobile__2 {
+    margin-bottom: 4px;
 }
 .menu {
     padding-top: 60px;
@@ -65,20 +85,11 @@ p { font-size: 2.2rem; }
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    border: 0.5px solid transparent;
 }
-
-.mobile {
-    display: none;
-    margin: 0;
-    padding: 12px 15px;
+.menu__btn:hover {
     background: transparent;
-    position: absolute;
-    color: #e2fbf9;
-    top: 26px;
-    right: 20px;
-    line-height: 1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 0.5px solid #f4cf00;
 }
 /* --------- */
 
@@ -103,7 +114,6 @@ p { font-size: 2.2rem; }
     line-height: 1.6;
     margin: 20px 0;
 }
-
 .btn {
     font-size: 1.8rem;
     font-weight: bold;
@@ -114,25 +124,76 @@ p { font-size: 2.2rem; }
     text-align: center;
     text-transform: uppercase;
 }
-/* ---------------------- */
+/* ---------- */
 main { text-align: center; }
 
-.project h2 {
-    color: #000;
+.project {
+    padding-top: 70px;
+    background: #ededed;
 }
-.aftore { background: #e4e4e4; }
-.aftore__item {
+.project .wrap { max-width: 1160px;}
+.project__item {
     display: inline-block;
-    width: calc(50% - 2px);
-    min-width: 300px;
-    min-height: 330px;
+    width: 50%;
+    min-width: 290px;
+    overflow: hidden;
+    text-align: left;
+    margin-right: -4px;
+}
+.project__item_1 {
+    min-height: 320px;
     overflow: hidden;
 }
-.aftore__item.right {
-    background: url("../img/bg_avtor.jpg") no-repeat center center / cover;
+.project__item_1 h2 {
+    padding: 30px;
+    color: #000;
 }
+.project__item_1 p { padding: 0 30px 30px; }
+
+.project__item_2 {
+    min-height: 320px;
+    line-height: 320px;
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+    margin-top: -0px;
+    font-size: 2.2rem;
+    font-family: "regular";
+    text-align: center;
+}
+.blue { background-color: #0068c9; }
+.light { background: #8eb8df; }
+.project__item_info {
+    line-height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+}
+.project__item_info img { margin-bottom: 20px; }
+/* ---------- */
+.aftore {
+    /* background: #e4e4e4; */
+    background: url("../img/avtor__bg.jpg") no-repeat center center / cover;
+    min-height: 740px;
+    line-height: 740px;
+    text-align: left;
+}
+.aftore__text {
+    font-family: "regular";
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.aftore__text p {
+    padding: 20px 16px 30px;
+    font-size: 1.8rem;
+}
+.text__bold {
+    font-family: "italic__bold";
+}
+/* ---------- */
 .happy {
-    background: url("../img/bg_heppy.jpg") no-repeat 54% center / cover;
+    background: url(../img/bg_heppy.jpg) no-repeat 54% center / cover;
     min-height: 480px;
     line-height: 480px;
     color: #fff;
@@ -142,13 +203,19 @@ main { text-align: center; }
     vertical-align: middle;
     display: inline-block;
 }
-.mass-media {}
+/* ---------- */
+
+.mass-media {
+    /* color: #0068c9;
+    font-family: "bold";
+    font-size: 4.5rem; */
+}
 .carousel {
     padding: 60px 0;
 }
-.button { margin-bottom: -40px; }
+.button { margin-bottom: -22px; }
 
-.mass-media_yellow {
+.mass-media__yellow {
     display: inline-block;
     background: #f4cf00;
     font-size: 1.8rem;
@@ -156,8 +223,13 @@ main { text-align: center; }
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    border: 2px solid transparent;
 }
-.mass-media_blue {
+.mass-media__yellow:hover {
+    background: #484848;
+    border: 2px solid #f4cf00;
+}
+.mass-media__blue {
     display: inline-block;
     background: #0068c9;
     font-size: 1.8rem;
@@ -166,8 +238,13 @@ main { text-align: center; }
     text-align: center;
     text-transform: uppercase;
     margin-left: -3px;
+    border: 2px solid transparent;
 }
-/* ---------------------- */
+.mass-media__blue:hover {
+    background: #484848;
+    border: 2px solid #0068c9;
+}
+/* ---------- */
 .footer {
     background: #484848;
     min-height: 426px;
@@ -199,34 +276,34 @@ main { text-align: center; }
 
 /* fonts */
 @font-face {
-    font-family: "Arian AMU"; 
-    src: url("../fonts/arnamu.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: 100; 
+    font-family: "regular";
+    src: url("../fonts/arnamu.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
 }
 
 @font-face {
-    font-family: "Arian AMU bold"; 
-    src: url("../fonts/arnamu_bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "bold";
+    src: url("../fonts/arnamu_bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "Arian AMU italic"; 
-    src: url("../fonts/arnamu_italic.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "italic";
+    src: url("../fonts/arnamu_italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-    font-family: "Arian AMU italic bold"; 
-    src: url("../fonts/arnamu_italic_bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "italic__bold";
+    src: url("../fonts/arnamu_italic_bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-    font-family: "Material Iconic"; 
-    src: url("../fonts/Material-Design-Iconic-Font.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "material__iconic";
+    src: url("../fonts/Material-Design-Iconic-Font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }

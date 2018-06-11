@@ -2,7 +2,7 @@
     .wrap { padding: 0 16px; }
     .menu {
         display: none;
-        padding-top: 24px;
+        padding-top: 10px;
         text-align: center;
         width: 100%;
         line-height: 2;
@@ -11,8 +11,9 @@
         top: 90px;
     }
     .logo {
-        padding-top: 20px;
-        display: block;
+        margin-top: 22px;
+        display: inline-block;
+        margin-right: 0;
     }
 
     .mobile {
@@ -38,6 +39,20 @@
         max-height: 1000px;
     }
     .header__menu .active { border-top: 1px solid #fafafa; }
-
     .footer .logo { padding-top: 0; }
+}
+
+@media (max-width: 1020px) {
+    .project__item {
+        margin-right: 0;
+        text-align: center;
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 600px) {
+    .project__item_2 {
+        display: block;
+        width: 100%;
+    }
 }
