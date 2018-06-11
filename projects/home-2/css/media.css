@@ -46,8 +46,14 @@
     .project__item {
         margin-right: 0;
         text-align: center;
-        width: calc(100% - 60px);
+        width: 100%;
     }
+    #parent{
+        display:flex;
+        flex-flow: column;
+      }
+    #block{ order: 2; }
+    #block1{ order: 1; }
 }
 
 @media (max-width: 600px) {
