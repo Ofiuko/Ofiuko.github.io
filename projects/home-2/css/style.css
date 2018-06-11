@@ -128,6 +128,7 @@ p { font-size: 2.2rem; }
 main { text-align: center; }
 
 .project {
+    font-family: "regular";
     padding-top: 70px;
     background: #ededed;
 }
@@ -145,6 +146,7 @@ main { text-align: center; }
     overflow: hidden;
 }
 .project__item_1 h2 {
+    font-family: "bold":
     padding: 30px;
     color: #000;
 }
