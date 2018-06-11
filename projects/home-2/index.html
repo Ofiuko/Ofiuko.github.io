@@ -10,37 +10,6 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
-    
-    
-<!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter49168318 = new Ya.Metrika2({
-                        id:49168318,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks2");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/49168318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 
 </head>
 
@@ -53,7 +22,12 @@
                         <img src="./img/logo.png" alt="logo">
                     </a>
                 </div>
-                <button class="mobile" type="button">☰</button>
+                <a href="#" class="mobile">
+                    <div class="mobile__1"></div>
+                    <div class="mobile__2"></div>
+                    <div class="mobile__3"></div>
+                </a>
+
                 <menu class="menu">
                     <ul>
                         <li>
@@ -99,15 +73,73 @@
     <main>
         <div class="project">
             <div class="wrap">
-                <h2>Ապագա Հայաստանի նախագիծ</h2>
+                <div class="project__item">
+                    <div class="project__item_1">
+                        <div class="project__item_2 blue">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon.png" alt="project__icon">
+                                <div>Կրթութուն</div>
+                            </div>
+                        </div>
+                        <div class="project__item_2 light">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon2.png" alt="project__icon2">
+                                <div>Տնտեսութուն</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__item_1">
+                        <div class="project__item_2 light">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon3.png" alt="project__icon3">
+                                <div>Երիտասարդություն</div>
+                            </div>
+                        </div>
+                        <div class="project__item_2 blue">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon4.png" alt="project__icon4">
+                                <div>Մշակույթ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <div class="project__item_1">
+                        <h2>Ապագա Հայաստանի նախագիծ</h2>
+                        <p>«Քաղաքացիական պայմանագիր» կուսակցության գործունեության հիմնական նպատակն է հայության մարդկային, տնտեսական,
+                            ֆինանսական, մտավոր ներուժի կամ նրա հիմնական մասի կենտրոնացումը ՀՀ տարածքում:</p>
+                    </div>
+                    <div class="project__item_1">
+                        <div class="project__item_2 light">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon5.png" alt="project__icon5">
+                                <div>Սփյուռք</div>
+                            </div>
+                        </div>
+                        <div class="project__item_2 blue">
+                            <div class="project__item_info">
+                                <img src="./img/project__icon6.png" alt="project__icon6">
+                                <div>Սպորտ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="aftore">
-            <div class="aftore__item">
-                <h2>– Նիկոլ Փաշինյան</h2>
+            <div class="wrap">
+                <div class="aftore__text">
+                    <h2>– Նիկոլ Փաշինյան</h2>
+                    <p class="text__bold">«Քաղաքացիական պայմանագիր»
+                        <br>կուսակցության ղեկավար</p>
+                    <p>«Քաղաքացիական պայմանագիր» կուսակցության
+                        <br> գործունեության հիմնական նպատակն է հայության
+                        <br> մարդկային, տնտեսական, ֆինանսական, մտավոր
+                        <br> ներուժի կամ նրա հիմնական մասի կենտրոնացումը
+                        <br> ՀՀ տարածքում:</p>
+                </div>
             </div>
-            <div class="aftore__item right"></div>
         </div>
 
         <div class="about">
@@ -144,10 +176,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="button">
-            <a href="#" class="mass-media_yellow">միանալ մեզ</a>
-            <a href="#" class="mass-media_blue">կատարել նվիրատվություն</a>
         </div>
     </main>
 
